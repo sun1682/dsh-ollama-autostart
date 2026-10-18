@@ -1,0 +1,35 @@
+{
+  "name": "dsh-ollama-autostart",
+  "version": "1.0.0",
+  "description": "Automatically starts the local Ollama service when a DSH Cordis plugin becomes ready.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "cordis",
+    "ollama",
+    "plugin",
+    "autostart"
+  ]
+}
